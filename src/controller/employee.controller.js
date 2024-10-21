@@ -1,7 +1,7 @@
 
 const db = require('../utils/db.js');
 const { isEmptyOrNull, KEY_TOKEN, REFRESH_KEY } = require('../utils/service.js');
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const jwt = require("jsonwebtoken");
 const { getPermissionUser, getRoleUser } = require('./auth.controller.js');
 

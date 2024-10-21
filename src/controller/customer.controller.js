@@ -2,7 +2,7 @@
 
 const db = require('../utils/db.js')
 const { isEmptyOrNull, KEY_TOKEN } = require('../utils/service.js');
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const jwt = require("jsonwebtoken");
 
 const login = async (req,res) => {
