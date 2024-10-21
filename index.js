@@ -35,6 +35,6 @@ order(app);
 address(app);
 pos(app);
 
-app.listen(port,(req,res)=>{
+app.listen(process.env.PORT,(req,res)=>{
     console.log(`App listening on port ${port}`)
 })
