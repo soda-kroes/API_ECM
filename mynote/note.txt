@@ -1,0 +1,17 @@
+
+#1.init
+    >npm init
+
+#2.install express
+    > npm intall express
+
+
+SELECT per.code FROM public.employee emp
+INNER JOIN public."role" rol ON(emp.role_id = rol.role_id)
+INNER JOIN public.role_permission rp ON(rol.role_id = rp.role_id)
+INNER JOIN public.permission per ON(rp.permission_id = per.permission_id) WHERE emp.employee_id = 3;
+
+SELECT * FROM public.employee;
+SELECT * FROM employee WHERE tel = '010987001'
+SELECT * FROM public.role_permission;
+SELECT * FROM public.permission

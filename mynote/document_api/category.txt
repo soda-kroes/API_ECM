@@ -1,0 +1,36 @@
+server = http://localhost:9091/api
+# Category
+    - get all
+        - url: server + category
+        - method: GET
+        - param: No param
+    - get one
+        - url: server + category/:id
+        - method: GET
+        - param: id
+    - create
+        - url: server + category
+        - method: POST
+        - param json:
+            {
+            "name": "MSI", //required
+            "parent_id": "2",
+            "status": "1",
+            "description": "MSI Product"
+            }
+    - update
+        - url: server + category
+        - method: PUT
+        - param json:
+            {
+            "category_id": "1" //required
+            "name": "MSI", //required
+            "parent_id": "2",
+            "status": "1",
+            "description": "MSI Product"
+            }
+    - delete
+        - url : server + category/:id
+        - method: DELETE
+        - param: id
+
