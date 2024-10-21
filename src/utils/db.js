@@ -9,8 +9,9 @@ const { Pool } = require('pg');
 //   port: '5432',
 //   database: 'ecm_2k24',
 // });
+
 const pool = new Pool({
-  connectionString: process.env.POSTGRES_URL,
+  connectionString: process.env.POSTGRES_URL + "?sslmode=require",
 })
 
 pool.connect()
